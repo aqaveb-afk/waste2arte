@@ -114,6 +114,10 @@ hr.r{border:0;border-top:1px solid var(--rule);margin:0}
 .cols .prose{color:#cfcdc7}
 @media (max-width:760px){.cols{grid-template-columns:1fr}}
 
+.seeworks{all:unset;cursor:pointer;font-family:var(--display);font-stretch:112%;font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--night-ink);border-bottom:1px solid var(--sand-on-night);padding:6px 0;width:max-content;margin-top:6px}
+.seeworks:hover{color:var(--sand-on-night)}
+.seeworks:focus-visible{outline:2px solid var(--sand-on-night);outline-offset:4px}
+.seeworks .sign{display:inline-block;margin-left:8px;color:var(--sand-on-night)}
 .works{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(40px,5vw,72px) clamp(24px,3vw,48px);margin-top:clamp(48px,6vw,88px);list-style:none;padding:0}
 .works li{display:grid;gap:14px;align-content:start;min-width:0}
 .works button{all:unset;cursor:zoom-in;display:block}
@@ -318,6 +322,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p>São 18 obras de fine art photography do fotógrafo e recoletor Nuno Antunes, resultado de vários anos de observação da costa alentejana e de ações de plogging nas praias do concelho de Sines.</p>
           <p>Cada fotografia convida a olhar duas vezes: primeiro vemos um objeto abandonado; depois descobrimos uma memória, um fragmento da nossa relação com o oceano e com o planeta. Aquilo que descartamos nunca desaparece, apenas muda de lugar.</p>
           <p class="motto">Porque o mar transforma.<br>A arte revela.<br>E nós escolhemos o futuro.</p>
+          <button type="button" class="seeworks" aria-controls="works" aria-expanded="false"><span class="t">Ver a exposição</span><span class="sign" aria-hidden="true">+</span></button>
         </div>
         <div class="prose en">
           <p class="lede" style="color:var(--night-ink)">Part of the parallel programme of the Músicas do Mundo Festival and supported by Sines City Council, Waste 2 Arte opens the first project of the Casas da Ilha Cultural and Regenerative Park.</p>
@@ -327,10 +332,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p>It brings together 18 fine art photographs by photographer and beachcomber Nuno Antunes, the result of years observing the Alentejo coast and plogging on the beaches of the Sines municipality.</p>
           <p>Each photograph asks us to look twice: first we see an abandoned object; then we find a memory, a fragment of our relationship with the ocean and the planet. What we discard never disappears; it only changes place.</p>
           <p class="motto">For the sea transforms.<br>Art reveals.<br>And we choose the future.</p>
+          <button type="button" class="seeworks" aria-controls="works" aria-expanded="false"><span class="t">See the exhibition</span><span class="sign" aria-hidden="true">+</span></button>
         </div>
       </div>
 
-      <ol class="works" id="works"></ol>
+      <ol class="works" id="works" hidden></ol>
     </div>
   </section>
 
@@ -727,6 +733,20 @@ document.getElementById('copy-mail').addEventListener('click',function(){
     const url='https://wa.me/351968350119?text='+encodeURIComponent(text);
     const a=document.createElement('a'); a.href=url; a.target='_blank'; a.rel='noopener'; document.body.appendChild(a); a.click(); a.remove();
   });
+})();
+
+// mostrar/esconder a exposição
+(function(){
+  const list=document.getElementById('works'); const btns=[...document.querySelectorAll('.seeworks')];
+  function set(open,scroll){
+    list.hidden=!open;
+    btns.forEach(b=>{b.setAttribute('aria-expanded',open);const en=b.querySelector('.t').textContent.startsWith('S')||b.querySelector('.t').textContent.startsWith('C');
+      b.querySelector('.t').textContent=open?(en?'Close the exhibition':'Fechar a exposição'):(en?'See the exhibition':'Ver a exposição');
+      b.querySelector('.sign').textContent=open?'−':'+';});
+    if(open&&scroll) list.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>set(list.hidden,true)));
+  if(location.hash==='#obras') set(true,true);
 })();
 </script>
 
