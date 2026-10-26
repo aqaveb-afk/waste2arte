@@ -1,0 +1,28 @@
+WASTE 2 ARTE · PARQUE CULTURAL E REGENERATIVO · CASAS DA ILHA
+Site estático (HTML + imagens). Não precisa de base de dados nem de PHP.
+
+CONTEÚDO
+  index.html     a página completa (PT/EN)
+  favicon.svg    ícone do separador
+  img/           31 fotografias (obra-01 a obra-18, parque, atelier, etc.)
+
+PUBLICAR NO NETLIFY (projeto "waste2arte" já criado na sua conta)
+
+  Opção A — arrastar (sem instalar nada)
+    1. Abrir https://app.netlify.com/projects/waste2arte/deploys
+    2. Arrastar esta pasta "waste2arte" para a caixa
+       "Need to update your project? Drag and drop your project output folder here".
+    3. Em ~30 s fica no ar em https://waste2arte.netlify.app
+
+  Opção B — automático (recomendado)
+    Este repositório está ligado ao projeto Netlify "waste2arte".
+    Cada alteração enviada para o ramo main é publicada sozinha.
+
+LIGAR AO SITE DAS CASAS DA ILHA
+  - Botão/menu no casasdailha.com a apontar para https://waste2arte.netlify.app
+  - Opcional: em Netlify > waste2arte > Domain management, juntar um subdomínio
+    (ex.: parque.casasdailha.com) e criar o registo CNAME indicado pelo Netlify.
+
+EDITAR TEXTOS
+  Abrir index.html num editor de texto. Os textos das 18 obras estão no fim do
+  ficheiro, na lista WORKS (português e inglês). Depois, voltar a publicar.
