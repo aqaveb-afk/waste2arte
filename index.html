@@ -75,8 +75,10 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backgroun
 nav.sections{display:flex;gap:22px;margin-left:auto}
 nav.sections a{font-family:var(--display);font-stretch:112%;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
 nav.sections a:hover{color:var(--ink)}
-.lang{display:flex;border:1px solid var(--rule);flex:none}
-.lang button{all:unset;cursor:pointer;font-family:var(--display);font-size:.7rem;letter-spacing:.12em;padding:6px 10px;color:var(--muted)}
+.lang{display:flex;align-items:center;border:1px solid var(--ink);flex:none}
+.lang svg{width:16px;height:16px;margin:0 2px 0 10px;stroke:var(--ink);fill:none;stroke-width:1.4}
+.lang button{all:unset;cursor:pointer;font-family:var(--display);font-size:.78rem;font-weight:500;letter-spacing:.12em;padding:10px 12px;min-width:20px;text-align:center;color:var(--ink)}
+.lang button:focus-visible{outline:2px solid var(--sand);outline-offset:-2px}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 @media (max-width:860px){nav.sections{display:none}.lang{margin-left:auto}}
 
@@ -228,8 +230,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       <a href="#visitar"><span class="pt">Visitar</span><span class="en">Visit</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Idioma / Language">
-      <button type="button" id="lang-pt" aria-pressed="true">PT</button>
-      <button type="button" id="lang-en" aria-pressed="false">EN</button>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+      <button type="button" id="lang-pt" aria-pressed="true" lang="pt" title="Português">PT</button>
+      <button type="button" id="lang-en" aria-pressed="false" lang="en" title="English">EN</button>
     </div>
   </div>
 </header>
@@ -691,7 +694,15 @@ document.getElementById('copy-mail').addEventListener('click',function(){
   try{navigator.clipboard.writeText(t).then(ok,()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('mail'));getSelection().removeAllRanges();getSelection().addRange(r)})}catch(e){}
 });
 
-try{const l=localStorage.getItem('w2a-lang');if(l==='en')setLang('en')}catch(e){}
+(function(){
+  // ordem: link com #en ou ?lang=en > escolha guardada > idioma do telemóvel/computador
+  let l=null;
+  const q=new URLSearchParams(location.search).get('lang');
+  if(location.hash==='#en'||q==='en') l='en'; else if(location.hash==='#pt'||q==='pt') l='pt';
+  if(!l){try{l=localStorage.getItem('w2a-lang')}catch(e){}}
+  if(!l){const n=(navigator.languages&&navigator.languages[0])||navigator.language||'pt'; l=/^pt/i.test(n)?'pt':'en';}
+  if(l==='en') setLang('en');
+})();
 
 // marcação passeios por WhatsApp
 (function(){
