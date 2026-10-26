@@ -18,10 +18,8 @@ PUBLICAR NO NETLIFY (projeto "waste2arte" já criado na sua conta)
     Este repositório está ligado ao projeto Netlify "waste2arte".
     Cada alteração enviada para o ramo main é publicada sozinha.
 
-LIGAR AO SITE DAS CASAS DA ILHA
-  - Botão/menu no casasdailha.com a apontar para https://waste2arte.netlify.app
-  - Opcional: em Netlify > waste2arte > Domain management, juntar um subdomínio
-    (ex.: parque.casasdailha.com) e criar o registo CNAME indicado pelo Netlify.
+ENDEREÇO PRÓPRIO (opcional)
+  - Em Netlify > waste2arte > Domain management é possível juntar um domínio próprio.
 
 EDITAR TEXTOS
   Abrir index.html num editor de texto. Os textos das 18 obras estão no fim do
