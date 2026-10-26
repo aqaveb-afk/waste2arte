@@ -31,6 +31,7 @@ body{margin:0}
   --muted:#5f605c;
   --rule:#d4d2cc;
   --sand:#94714f;       /* areia/ferrugem do cartaz, escurecida p/ contraste */
+  --band:#e8e6e0;      /* faixa dos passeios */
   --night:#0b0b0b;      /* fundo das fotografias */
   --night-ink:#ecebe7;
   --night-muted:#9a9890;
@@ -42,8 +43,8 @@ body{margin:0}
   --gutter-r:max(16px,env(safe-area-inset-right,0px));
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#151615;--ink:#e9e8e4;--muted:#a3a29c;--rule:#30312f;--sand:#d2ac8b;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#151615;--ink:#e9e8e4;--muted:#a3a29c;--rule:#30312f;--sand:#d2ac8b;color-scheme:dark}
+  --paper:#151615;--ink:#e9e8e4;--muted:#a3a29c;--rule:#30312f;--sand:#d2ac8b;--band:#1c1d1b;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#151615;--ink:#e9e8e4;--muted:#a3a29c;--rule:#30312f;--sand:#d2ac8b;--band:#1c1d1b;color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -133,8 +134,28 @@ hr.r{border:0;border-top:1px solid var(--rule);margin:0}
 .thanks .prose b{font-weight:500}
 .thanks .sig{font-family:var(--display);font-stretch:125%;font-weight:600;letter-spacing:.18em;font-size:.8rem;text-transform:uppercase}
 
+/* passeios */
+.walk{background:var(--band)}
+.route{list-style:none;margin:clamp(32px,4vw,56px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative}
+.route::before{content:"";position:absolute;left:12px;right:calc(25% - 12px);top:11px;border-top:1px dashed var(--sand)}
+.route li{position:relative;display:grid;gap:10px;align-content:start;padding-right:24px;min-width:0}
+.route .dot{width:23px;height:23px;border-radius:50%;background:var(--band);border:1px solid var(--sand);display:grid;place-items:center;font-family:var(--display);font-size:.62rem;color:var(--sand);position:relative;font-variant-numeric:tabular-nums}
+.route li:last-child .dot{background:var(--sand);color:var(--band)}
+.route h3{font-size:.95rem;text-transform:uppercase;letter-spacing:.06em;font-stretch:118%;margin-top:6px}
+.route p{color:var(--muted);font-size:.95em;line-height:1.55}
+.route .leg{font-family:var(--display);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand)}
+@media (max-width:760px){
+  .route{grid-template-columns:1fr;gap:28px}
+  .route::before{left:11px;right:auto;top:6px;bottom:6px;border-top:0;border-left:1px dashed var(--sand)}
+  .route li{grid-template-columns:23px 1fr;column-gap:16px;padding-right:0}
+  .route li > :not(.dot){grid-column:2}
+  .route h3{margin-top:2px}
+}
+.bring{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:clamp(40px,5vw,64px);padding-top:24px;border-top:1px solid var(--rule)}
+.bring div{display:grid;gap:6px;align-content:start}
+.bring .v{font-family:var(--display);font-stretch:112%;font-size:1rem;overflow-wrap:anywhere}
 /* visitar */
-.visit{border-top:1px solid var(--rule)}
+.visit{}
 .vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
 .vgrid div{display:grid;gap:8px;align-content:start}
 .vgrid .v{font-family:var(--display);font-stretch:112%;font-size:1rem;user-select:all;overflow-wrap:anywhere}
@@ -169,6 +190,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       <a href="#exposicao"><span class="pt">Exposição</span><span class="en">Exhibition</span></a>
       <a href="#artista"><span class="pt">Artista</span><span class="en">Artist</span></a>
       <a href="#atelier">Atelier</a>
+      <a href="#passeios"><span class="pt">Passeios</span><span class="en">Walks</span></a>
       <a href="#visitar"><span class="pt">Visitar</span><span class="en">Visit</span></a>
     </nav>
     <div class="lang" role="group" aria-label="Idioma / Language">
@@ -382,6 +404,78 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p>To the <b>Porto Covo Parish Council</b> and its President, <b>José Pedro Arsénio</b>, and to Porto Covo plogger <b>Eurico Nunes</b>, whose dedication to cleaning our beaches keeps inspiring this mission.</p>
           <p>To the production team and all our partners and collaborators. And to photographer and friend <b>Nuno Antunes</b>, who turns waste into art through the way he sees.</p>
           <p class="sig">Casas da Ilha</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSEIOS -->
+  <section id="passeios" class="walk">
+    <div class="wrap">
+      <div class="split">
+        <div class="head">
+          <p class="label"><span class="pt">Passeios a pé</span><span class="en">Guided walks</span></p>
+          <h2><span class="pt">De Porto Covo às Casas da Ilha, pela costa</span><span class="en">From Porto Covo to Casas da Ilha, along the coast</span></h2>
+        </div>
+        <div class="prose pt">
+          <p class="lede">Um passeio de cerca de três horas que liga a aldeia ao Parque pelo caminho mais bonito: a beira-mar.</p>
+          <p>Parte do largo principal de Porto Covo, desce ao cais de pesca e segue o trilho de arriba até ao forte da Ilha do Pessegueiro. Daí continua para o interior até às Casas da Ilha, onde o passeio termina com a visita à exposição Waste 2 Arte.</p>
+          <p>Pelo caminho, é a paisagem que mostra porque é que este projeto existe: as praias, as rochas e o mar que devolve à costa os objetos fotografados na exposição.</p>
+        </div>
+        <div class="prose en">
+          <p class="lede">A walk of about three hours that links the village to the Park along the most beautiful route: the seafront.</p>
+          <p>It starts in Porto Covo's main square, goes down to the fishing harbour and follows the clifftop trail to the fort facing Pessegueiro Island. From there it heads inland to Casas da Ilha, where the walk ends with a visit to the Waste 2 Arte exhibition.</p>
+          <p>Along the way, the landscape shows why this project exists: the beaches, the rocks and the sea that returns to the shore the objects photographed in the exhibition.</p>
+        </div>
+      </div>
+
+      <ol class="route" aria-label="Percurso">
+        <li>
+          <span class="dot">1</span>
+          <span class="leg"><span class="pt">Partida</span><span class="en">Start</span></span>
+          <h3><span class="pt">Largo de Porto Covo</span><span class="en">Porto Covo square</span></h3>
+          <p class="pt">Encontro no largo principal da aldeia, entre as casas brancas de barra azul.</p>
+          <p class="en">Meeting point in the village's main square, among the white houses with blue trim.</p>
+        </li>
+        <li>
+          <span class="dot">2</span>
+          <span class="leg"><span class="pt">Descida</span><span class="en">Down to the sea</span></span>
+          <h3><span class="pt">Cais de pesca</span><span class="en">Fishing harbour</span></h3>
+          <p class="pt">Descida até ao porto de pesca, onde os barcos ainda saem para o mar.</p>
+          <p class="en">Down to the small harbour, where the boats still head out to sea.</p>
+        </li>
+        <li>
+          <span class="dot">3</span>
+          <span class="leg"><span class="pt">Trilho costeiro</span><span class="en">Coastal trail</span></span>
+          <h3><span class="pt">Forte da Ilha do Pessegueiro</span><span class="en">Pessegueiro Island fort</span></h3>
+          <p class="pt">Caminho de arriba, com praias e enseadas, até ao forte em frente à ilha.</p>
+          <p class="en">Clifftop path past beaches and coves to the fort facing the island.</p>
+        </li>
+        <li>
+          <span class="dot">4</span>
+          <span class="leg"><span class="pt">Chegada</span><span class="en">Finish</span></span>
+          <h3>Casas da Ilha</h3>
+          <p class="pt">Chegada ao Parque Cultural e Regenerativo e visita à exposição Waste 2 Arte.</p>
+          <p class="en">Arrival at the Cultural and Regenerative Park and visit to the Waste 2 Arte exhibition.</p>
+        </li>
+      </ol>
+
+      <div class="bring">
+        <div>
+          <span class="label"><span class="pt">Duração</span><span class="en">Duration</span></span>
+          <span class="v"><span class="pt">Cerca de 3 horas</span><span class="en">About 3 hours</span></span>
+        </div>
+        <div>
+          <span class="label"><span class="pt">Percurso</span><span class="en">Route</span></span>
+          <span class="v"><span class="pt">Linear, de Porto Covo às Casas da Ilha</span><span class="en">One way, Porto Covo to Casas da Ilha</span></span>
+        </div>
+        <div>
+          <span class="label"><span class="pt">Levar</span><span class="en">Bring</span></span>
+          <span class="v"><span class="pt">Calçado de caminhada, água, chapéu e protetor solar</span><span class="en">Walking shoes, water, a hat and sunscreen</span></span>
+        </div>
+        <div>
+          <span class="label"><span class="pt">Marcações</span><span class="en">Bookings</span></span>
+          <span class="v">amazingportocovo@gmail.com</span>
         </div>
       </div>
     </div>
