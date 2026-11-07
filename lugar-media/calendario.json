@@ -62,16 +62,20 @@
    "casasdailha.portocovo": "Uma mesa comprida à sombra da oliveira.\n\nPão com azeite e alecrim, berbigão com malagueta, alho e azeite no tacho. O Bar da Eira é a mesa ao ar livre das Casas da Ilha.\n\nAlmoços e jantares de grupo: WhatsApp 968 350 119\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #BarDaEira"
   },
   "titulo_reel": "Uma mesa comprida à sombra da oliveira.",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Um jornal que acorda antes de Sines.\n\nÀs 8h, o Amo Sines publica as notícias do concelho, em português e inglês. Às 18h há nova edição. Pelo meio, a agenda, o Comes e Bebes e os guias. Tudo nasceu aqui, com IA, no meio do campo. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 01\n\nLê em https://amo-sines.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #AmoSines #Sines #LaboratorioAI"
-  },
   "post1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-post1.jpg",
   "story1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-story1.jpg",
   "reel_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-reel.mp4",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-post2.mp4",
+  "lab": "Amo Sines",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Um jornal que acorda antes de Sines.\n\nÀs 8h, o Amo Sines publica as notícias do concelho, em português e inglês. Às 18h há nova edição. Pelo meio, a agenda, o Comes e Bebes e os guias. Tudo nasceu aqui, com IA, no meio do campo. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 01\n\nLê em https://amo-sines.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #AmoSines #Sines #LaboratorioAI"
+  },
+  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-post2.jpg",
   "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-10-story2.jpg",
-  "post2_tipo": "reel",
-  "lab": "Amo Sines"
+  "legenda_post2": {
+   "casasdailha.portocovo": "Areia dourada, água verde, rocha escura.\n\nUma enseada vista de cima, na costa alentejana. Muitas destas praias só se encontram a pé, pelo Trilho dos Pescadores.\n\nGuarda para o teu próximo passeio.\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #TrilhoDosPescadores"
+  }
  },
  {
   "data": "2026-11-11",
@@ -118,16 +122,20 @@
    "casasdailha.portocovo": "Cada candeeiro começou numa maré.\n\nQuilhas, boias, flutuadores e plástico gasto pelo mar, recolhidos na costa e transformados em luz. Nenhum é igual ao outro.\n\nPartilha com quem gosta de objetos com história.\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #Waste2Arte"
   },
   "titulo_reel": "Cada candeeiro começou numa maré.",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Ver de cima o que não se vê do chão.\n\nEstas imagens são das Casas da Ilha, vistas pela Arqui Drone: os lagos, a vinha, as casas acesas à noite. Do alto percebe-se a forma do terreno e o lugar de cada casa. A entrega é feita até 72 horas depois do voo. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 02\n\nPede o teu voo em https://arqui-drone.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #ArquiDrone #Drone #Arquitetura #LaboratorioAI"
-  },
   "post1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-post1.jpg",
   "story1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-story1.jpg",
   "reel_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-reel.mp4",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-post2.mp4",
+  "lab": "Arqui Drone",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Ver de cima o que não se vê do chão.\n\nEstas imagens são das Casas da Ilha, vistas pela Arqui Drone: os lagos, a vinha, as casas acesas à noite. Do alto percebe-se a forma do terreno e o lugar de cada casa. A entrega é feita até 72 horas depois do voo. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 02\n\nPede o teu voo em https://arqui-drone.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #ArquiDrone #Drone #Arquitetura #LaboratorioAI"
+  },
+  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-post2.jpg",
   "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-13-story2.jpg",
-  "post2_tipo": "reel",
-  "lab": "Arqui Drone"
+  "legenda_post2": {
+   "casasdailha.portocovo": "Ao fim do dia, as casas acendem-se.\n\nO lago fica dourado, as oliveiras guardam o caminho e as janelas acendem-se uma a uma. É a hora preferida de quem fica aqui.\n\nReservas: WhatsApp 968 350 119\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral"
+  }
  },
  {
   "data": "2026-11-14",
@@ -192,16 +200,20 @@
    "casasdailha.portocovo": "Falésias, enseadas e o Atlântico.\n\nGrutas cavadas pelo mar, enseadas que só se veem de cima, chorão nas rochas. É o Trilho dos Pescadores, e ao fundo a Ilha do Pessegueiro.\n\nPasseio guiado a partir de Porto Covo: WhatsApp 968 350 119\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #TrilhoDosPescadores"
   },
   "titulo_reel": "Falésias, enseadas e o Atlântico.",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Casas modulares com alma alentejana.\n\nDois módulos de madeira, unidos no terreno. Lá dentro, um quarto de casal com casa de banho, outro com beliches, sala e cozinha abertas. Por fora, deck e pérgula. A Casa Marginal é o primeiro modelo da Alentejo Modular, com base em Porto Covo. A casa modelo chega em 2027. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 03\n\nVê o projeto em https://casamarginal-arqritabergano.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #CasaMarginal #AlentejoModular #CasasModulares #LaboratorioAI"
-  },
   "post1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-post1.jpg",
   "story1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-story1.jpg",
   "reel_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-reel.mp4",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-post2.mp4",
+  "lab": "Casa Marginal",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Casas modulares com alma alentejana.\n\nDois módulos de madeira, unidos no terreno. Lá dentro, um quarto de casal com casa de banho, outro com beliches, sala e cozinha abertas. Por fora, deck e pérgula. A Casa Marginal é o primeiro modelo da Alentejo Modular, com base em Porto Covo. A casa modelo chega em 2027. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 03\n\nVê o projeto em https://casamarginal-arqritabergano.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #CasaMarginal #AlentejoModular #CasasModulares #LaboratorioAI"
+  },
+  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-post2.jpg",
   "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-17-story2.jpg",
-  "post2_tipo": "reel",
-  "lab": "Casa Marginal"
+  "legenda_post2": {
+   "casasdailha.portocovo": "Cordas e garrafas do mar, e o sol a pôr-se na eira.\n\nO Bar da Eira é onde as Casas da Ilha se juntam ao fim do dia: mesas compridas, luz baixa e a conversa a começar.\n\nAlmoços e jantares de grupo: WhatsApp 968 350 119\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #BarDaEira"
+  }
  },
  {
   "data": "2026-11-18",
@@ -248,81 +260,79 @@
    "casasdailha.portocovo": "Visto de cima, percebe-se tudo.\n\nAs casas entre os dois lagos, a vinha nova, o campo até à serra. E, à noite, as casas acesas.\n\nReservas: WhatsApp 968 350 119\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral"
   },
   "titulo_reel": "Visto de cima, percebe-se tudo.",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Dez pensadores para uma pergunta tua.\n\nPergunta. Escolhe até três respostas. Recebe uma só, feita das que escolheste. A Roda foi construída com IA, aqui, no campo, onde há tempo para perguntas grandes. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 04\n\nExperimenta em https://a-roda.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #ARoda #Filosofia #LaboratorioAI"
-  },
   "post1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-post1.jpg",
   "story1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-story1.jpg",
   "reel_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-reel.mp4",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-post2.mp4",
+  "lab": "A Roda",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Dez pensadores para uma pergunta tua.\n\nPergunta. Escolhe até três respostas. Recebe uma só, feita das que escolheste. A Roda foi construída com IA, aqui, no campo, onde há tempo para perguntas grandes. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 04\n\nExperimenta em https://a-roda.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #ARoda #Filosofia #LaboratorioAI"
+  },
+  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-post2.jpg",
   "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-20-story2.jpg",
-  "post2_tipo": "reel",
-  "lab": "A Roda"
+  "legenda_post2": {
+   "casasdailha.portocovo": "Sombra de oliveira à porta.\n\nCasas brancas, telha de barro e oliveiras antigas. O Alentejo de sempre, a dois passos do mar de Porto Covo.\n\nReservas: WhatsApp 968 350 119\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral"
+  }
  },
  {
   "data": "2026-11-24",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-24-post2.mp4",
-  "post2_tipo": "reel",
-  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-24-story2.jpg",
-  "legenda_post2": {
-   "casasdailha.portocovo": "O ponto de encontro das adolescentes cariocas.\n\nNotícias, inspiração e um diário pessoal. A LALIA fala de música, moda e penteados, e atualiza-se duas vezes por dia. Nasceu nas Casas da Ilha, longe da cidade que conta. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 06\n\nConhece em https://lalia-jornal.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #LALIA #LaboratorioAI"
-  },
   "lab": "LALIA",
-  "serie": "Laboratório"
+  "serie": "Laboratório",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-24-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-24-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "O ponto de encontro das adolescentes cariocas.\n\nNotícias, inspiração e um diário pessoal. A LALIA fala de música, moda e penteados, e atualiza-se duas vezes por dia. Nasceu nas Casas da Ilha, longe da cidade que conta. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 06\n\nConhece em https://lalia-jornal.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #LALIA #LaboratorioAI"
+  }
  },
  {
   "data": "2026-11-27",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-27-post2.mp4",
-  "post2_tipo": "reel",
-  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-27-story2.jpg",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Fogo, massa e tempo.\n\nQuatro pizzas: Margherita, Diavola, Alentejana com linguiça e mel, e Courgette. Há também food truck para eventos e empresas, de Tróia a Odeceixe. O site tem o menu, o horário e o pedido de orçamento. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 07\n\nVê o menu em https://pizza-porto-covo.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #PizzasDePortoCovo #PizzaBar #LaboratorioAI"
-  },
   "lab": "Pizzas de Porto Covo",
-  "serie": "Laboratório"
+  "serie": "Laboratório",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-27-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-11-27-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Fogo, massa e tempo.\n\nQuatro pizzas: Margherita, Diavola, Alentejana com linguiça e mel, e Courgette. Há também food truck para eventos e empresas, de Tróia a Odeceixe. O site tem o menu, o horário e o pedido de orçamento. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 07\n\nVê o menu em https://pizza-porto-covo.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #PizzasDePortoCovo #PizzaBar #LaboratorioAI"
+  }
  },
  {
   "data": "2026-12-01",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-01-post2.mp4",
-  "post2_tipo": "reel",
-  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-01-story2.jpg",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Inglês, uma lição de cada vez.\n\nPouco tempo, todos os dias. A EasyLearn foi pensada assim: lições curtas, um objetivo diário e vontade de voltar amanhã. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 08\n\nExperimenta em https://easylearn-ingles.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #EasyLearn #Ingles #LaboratorioAI"
-  },
   "lab": "EasyLearn",
-  "serie": "Laboratório"
+  "serie": "Laboratório",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-01-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-01-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Inglês, uma lição de cada vez.\n\nPouco tempo, todos os dias. A EasyLearn foi pensada assim: lições curtas, um objetivo diário e vontade de voltar amanhã. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 08\n\nExperimenta em https://easylearn-ingles.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #EasyLearn #Ingles #LaboratorioAI"
+  }
  },
  {
   "data": "2026-12-04",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-04-post2.mp4",
-  "post2_tipo": "reel",
-  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-04-story2.jpg",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Arte, natureza e território.\n\nUma exposição ao ar livre, um atelier que faz peças com materiais do mar, um passeio a pé desde Porto Covo e pizzas no Bar da Eira à chegada. Tudo junto num site construído nas Casas da Ilha. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 09\n\nVisita em https://waste2arte.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #Waste2Arte #ParqueCulturalERegenerativo #LaboratorioAI"
-  },
   "lab": "Waste 2 Arte",
-  "serie": "Laboratório"
+  "serie": "Laboratório",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-04-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-04-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Arte, natureza e território.\n\nUma exposição ao ar livre, um atelier que faz peças com materiais do mar, um passeio a pé desde Porto Covo e pizzas no Bar da Eira à chegada. Tudo junto num site construído nas Casas da Ilha. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 09\n\nVisita em https://waste2arte.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #Waste2Arte #ParqueCulturalERegenerativo #LaboratorioAI"
+  }
  },
  {
   "data": "2026-12-08",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-08-post2.mp4",
-  "post2_tipo": "reel",
-  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-08-story2.jpg",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Escolher o visual é divertido.\n\nAntes de comprar, olhar para o roupeiro. A Lara Stylish junta peças que já existem e sugere três maneiras de as vestir. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 10\n\nExperimenta em https://lara-personal-stylish.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #LaraStylish #Moda #LaboratorioAI"
-  },
   "lab": "Lara Stylish",
-  "serie": "Laboratório"
+  "serie": "Laboratório",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-08-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-08-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Escolher o visual é divertido.\n\nAntes de comprar, olhar para o roupeiro. A Lara Stylish junta peças que já existem e sugere três maneiras de as vestir. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 10\n\nExperimenta em https://lara-personal-stylish.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #LaraStylish #Moda #LaboratorioAI"
+  }
  },
  {
   "data": "2026-12-11",
-  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-11-post2.mp4",
-  "post2_tipo": "reel",
-  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-12-11-story2.jpg",
-  "legenda_post2": {
-   "casasdailha.portocovo": "Casas modulares com assinatura.\n\nUm jornal sobre a construção que se faz em fábrica. Também nasceu nas Casas da Ilha, onde há um showroom de construção modular. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 13\n\nLê em https://grow-it-modular.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #GrowItModular #ConstrucaoModular #LaboratorioAI"
-  },
   "lab": "Grow it Modular",
-  "serie": "Laboratório"
+  "serie": "Laboratório",
+  "lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-11-lab.mp4",
+  "story_lab_url": "https://waste2arte.netlify.app/lugar-media/2026-12-11-story-lab.jpg",
+  "legenda_lab": {
+   "casasdailha.portocovo": "Casas modulares com assinatura.\n\nUm jornal sobre a construção que se faz em fábrica. Também nasceu nas Casas da Ilha, onde há um showroom de construção modular. Aqui no campo até há tempo para criar.\n\nLaboratório AI · Casas da Ilha · nº 13\n\nLê em https://grow-it-modular.netlify.app\n\n#LugarDePortoCovo #CasasDaIlha #PortoCovo #AlentejoLitoral #FeitoNoLugar #IAnoCampo #GrowItModular #ConstrucaoModular #LaboratorioAI"
+  }
  }
 ]
