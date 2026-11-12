@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /lugar-media/
+Sitemap: https://arte.casasdailha.com/sitemap.xml
