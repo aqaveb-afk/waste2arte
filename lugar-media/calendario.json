@@ -434,6 +434,30 @@
   "titulo_reel": "O dia acaba devagar."
  },
  {
+  "data": "2026-11-29",
+  "post1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-29-post1.jpg",
+  "post1_carrossel": [
+   "https://waste2arte.netlify.app/lugar-media/2026-11-29-carrossel-1.jpg",
+   "https://waste2arte.netlify.app/lugar-media/2026-11-29-carrossel-2.jpg",
+   "https://waste2arte.netlify.app/lugar-media/2026-11-29-carrossel-3.jpg",
+   "https://waste2arte.netlify.app/lugar-media/2026-11-29-carrossel-4.jpg"
+  ],
+  "story1_url": "https://waste2arte.netlify.app/lugar-media/2026-11-29-story1.mp4",
+  "legenda_post1": {
+   "casasdailha.portocovo": "O Forte da Ilha do Pessegueiro, a 5 minutos das Casas da Ilha.\n\nComeçou a ser construído em 1588, com projeto de Filippo Terzi, para fazer par com o forte da Ilha, mesmo em frente. Entre os dois devia nascer um porto, que nunca chegou a acabar.\n\nHoje é passeio de fim de tarde: pedra, vento e a Ilha sempre à vista. Desliza para ver mais.\n\n@lugardeportocovo · @casasdailha.portocovo\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #IlhaDoPessegueiro #ForteDoPessegueiro"
+  },
+  "reel_url": "https://waste2arte.netlify.app/lugar-media/2026-11-29-reel.mp4",
+  "titulo_reel": "O Forte da Ilha",
+  "legenda_reel": {
+   "casasdailha.portocovo": "A 5 minutos das Casas da Ilha há um forte de pedra virado para a Ilha.\n\nDesde 1588, só o vento faz a ronda.\n\n@lugardeportocovo · @casasdailha.portocovo\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #IlhaDoPessegueiro #ForteDoPessegueiro"
+  },
+  "post2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-29-post2.jpg",
+  "story2_url": "https://waste2arte.netlify.app/lugar-media/2026-11-29-story2.mp4",
+  "legenda_post2": {
+   "casasdailha.portocovo": "Pergunta para quem conhece bem esta costa.\n\nJunto ao Forte da Ilha do Pessegueiro há rocha cortada em blocos e valas direitas, como estas. Porque é que estão assim?\n\nA) Pedreira de onde saiu a pedra do forte\nB) Tanques antigos, do tempo dos romanos\nC) Trincheiras militares\nD) Outra ideia?\n\nResponde nos comentários. Depois contamos o que soubermos.\n\n@lugardeportocovo · @casasdailha.portocovo\n\n#CasasDaIlha #PortoCovo #AlentejoLitoral #IlhaDoPessegueiro #ForteDoPessegueiro"
+  }
+ },
+ {
   "data": "2026-12-01",
   "lab": "EasyLearn",
   "serie": "Laboratório",
