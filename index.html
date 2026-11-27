@@ -136,6 +136,14 @@ hr.r{border:0;border-top:1px solid var(--rule);margin:0}
 .works.short li:nth-child(n+4){display:none}
 #seeworks{display:block;margin-top:clamp(40px,5vw,64px)}
 #seeworks .n15{color:var(--night-muted)}
+.cols.short .prose > p:not(.lede):not(.motto){display:none}
+.cols:not(.short) .prose > .more{order:9}
+.more{all:unset;cursor:pointer;font-size:.86rem;font-weight:500;color:var(--night-ink);border-bottom:1px solid var(--night-muted);padding-bottom:2px;width:max-content}
+.more:hover{border-bottom-color:var(--night-ink)}
+.more:focus-visible{outline:2px solid var(--night-ink);outline-offset:4px}
+.more .a{display:inline-block;margin-left:4px}
+.cap .more{grid-column:2;margin-top:6px;font-size:.8rem}
+.works li:not(.open) .cap p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 
 .dl-night{display:block;margin-top:14px;font-size:.84rem;color:var(--night-muted);text-decoration:underline;text-underline-offset:.22em;width:max-content}
 .dl-night:hover{color:var(--night-ink)}
@@ -236,9 +244,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       <p class="w2a" aria-label="Waste 2 Arte">WASTE <span>2</span> ARTE</p>
       <p class="label">Amazing Recycling Territory Experience</p>
 
-      <div class="cols">
+      <div class="cols short" id="intro">
         <div class="prose pt">
           <p class="lede">Integrada na programação paralela do Festival Músicas do Mundo e com o apoio da Câmara Municipal de Sines, a Waste 2 Arte inaugura o primeiro projeto do Parque Cultural e Regenerativo das Casas da Ilha.</p>
+          <button type="button" class="more" data-more="intro" aria-expanded="false"><span class="t">Ver mais</span> <span class="a" aria-hidden="true">↓</span></button>
           <p>O espaço nasce com a missão de promover, de forma acessível, criativa e inspiradora, os valores ambientais, culturais e paisagísticos do Parque Natural do Sudoeste Alentejano e Costa Vicentina, sensibilizando visitantes e comunidade para a preservação do território através da arte, da educação ambiental e da sustentabilidade.</p>
           <p>Uma exposição que propõe uma reflexão sobre a relação entre o Homem e o Oceano, entre o Homem e o Planeta, e mostra como a criatividade pode valorizar materiais recolhidos no ambiente e estimular comportamentos mais responsáveis.</p>
         </div>
@@ -250,6 +259,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
         </div>
         <div class="prose en">
           <p class="lede">Part of the parallel programme of the Músicas do Mundo Festival and supported by Sines City Council, Waste 2 Arte opens the first project of the Casas da Ilha Cultural and Regenerative Park.</p>
+          <button type="button" class="more" data-more="intro" aria-expanded="false"><span class="t">See more</span> <span class="a" aria-hidden="true">↓</span></button>
           <p>The space was created to promote, in an accessible, creative and inspiring way, the environmental, cultural and landscape values of the Southwest Alentejo and Vicentine Coast Natural Park, raising awareness among visitors and the local community of the importance of preserving the territory through art, environmental education and sustainability.</p>
           <p>The exhibition invites reflection on the relationship between humanity and the ocean, and between humanity and the planet, showing how creativity can add value to materials collected from the environment and encourage more responsible behaviour.</p>
         </div>
@@ -262,7 +272,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       </div>
 
       <ol class="works" id="works"></ol>
-      <button type="button" class="seeworks" id="seeworks" aria-controls="works" aria-expanded="false"><span class="pt">Ver mais</span><span class="en">See more</span><span class="n15"> · 15</span><span class="sign" aria-hidden="true">+</span></button>
+      <button type="button" class="seeworks" id="seeworks" aria-controls="works" aria-expanded="false"><span class="pt">Ver mais</span><span class="en">See more</span><span class="n15"> · 15</span><span class="sign" aria-hidden="true">↓</span></button>
     </div>
   </section>
 
@@ -557,7 +567,8 @@ WORKS.forEach((w,i)=>{
   li.innerHTML=`<button type="button" data-i="${i}" aria-label="${w[0]} — ampliar"><img src="img/obra-${n}.jpg" width="1176" height="586" loading="lazy" alt="${w[4]}"></button>
   <div class="cap"><span class="n">${n}/18</span><h3><span class="pt">${w[0]}</span><span class="en">${w[1]}</span></h3>
   <p class="pt">${w[2]}</p><p class="en">${w[3]}</p>
-  <span class="alt pt">${w[1]}</span><span class="alt en">${w[0]}</span></div>`;
+  <span class="alt pt">${w[1]}</span><span class="alt en">${w[0]}</span>
+  <button type="button" class="more" aria-expanded="false"><span class="t pt">Ver mais</span><span class="t en">See more</span> <span class="a" aria-hidden="true">↓</span></button></div>`;
   list.appendChild(li);
 });
 
@@ -607,6 +618,14 @@ document.getElementById('copy-mail').addEventListener('click',function(){
   if(l==='en') setLang('en');
 })();
 
+// "ver mais" na introdução e nas legendas
+function setMore(btn,open){btn.setAttribute('aria-expanded',open);btn.querySelector('.a').textContent=open?'↑':'↓';
+  btn.querySelectorAll('.t').forEach(t=>{const en=t.classList.contains('en')||/^See/.test(t.textContent);t.textContent=open?(en?'See less':'Ver menos'):(en?'See more':'Ver mais')})}
+document.querySelectorAll('[data-more="intro"]').forEach(b=>b.addEventListener('click',()=>{
+  const intro=document.getElementById('intro');const open=intro.classList.toggle('short')===false;
+  document.querySelectorAll('[data-more="intro"]').forEach(x=>setMore(x,open))}));
+document.getElementById('works').addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;
+  const li=b.closest('li');setMore(b,li.classList.toggle('open'))});
 // exposição: 3 obras e "ver mais"
 (function(){
   const list=document.getElementById('works'),btn=document.getElementById('seeworks');
@@ -615,7 +634,7 @@ document.getElementById('copy-mail').addEventListener('click',function(){
     btn.querySelector('.pt').textContent=open?'Ver menos':'Ver mais';
     btn.querySelector('.en').textContent=open?'See less':'See more';
     btn.querySelector('.n15').hidden=open;
-    btn.querySelector('.sign').textContent=open?'−':'+';
+    btn.querySelector('.sign').textContent=open?'↑':'↓';
   }
   btn.addEventListener('click',()=>{const open=list.classList.contains('short');set(open);
     if(open) list.children[3].scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
