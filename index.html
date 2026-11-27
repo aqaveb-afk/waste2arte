@@ -146,6 +146,60 @@ hr.r{border:0;border-top:1px solid var(--rule);margin:0}
 .dl-night{display:block;margin-top:14px;font-size:.84rem;color:var(--night-muted);text-decoration:underline;text-underline-offset:.22em;width:max-content}
 .dl-night:hover{color:var(--night-ink)}
 .opening .dl{color:var(--ink);text-decoration:underline;text-underline-offset:.3em}
+/* infografia: do mar à arte */
+.process{border-top:1px solid var(--rule)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,40px);position:relative}
+.steps::before{content:"";position:absolute;left:36px;right:calc(25% - 36px);top:36px;border-top:1px dashed var(--muted);opacity:.5}
+.steps li{display:grid;gap:10px;align-content:start;min-width:0;position:relative}
+.steps .ic{width:72px;height:72px;background:var(--paper);color:var(--ink);display:block;position:relative}
+.steps .ic svg{width:72px;height:72px;display:block}
+.steps .n{font-size:.72rem;letter-spacing:.08em;color:var(--muted);margin-top:8px;font-variant-numeric:tabular-nums}
+.steps h3{font-family:var(--serif);font-weight:400;font-size:1.35rem}
+.steps p{color:var(--muted);font-size:.95em;line-height:1.55}
+@media (max-width:760px){.steps{grid-template-columns:1fr;gap:28px}.steps::before{left:36px;right:auto;top:36px;bottom:36px;border-top:0;border-left:1px dashed var(--muted)}
+  .steps li{grid-template-columns:72px 1fr;column-gap:20px}.steps li > :not(.ic){grid-column:2}.steps .ic{grid-row:1/span 3}.steps .n{margin-top:6px}}
+.nums{margin-top:clamp(56px,7vw,96px);padding-top:24px;border-top:1px solid var(--rule)}
+.ngrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;margin-top:20px}
+.ngrid div{display:grid;gap:6px;align-content:start;padding-left:16px;border-left:1px solid var(--rule)}
+.ngrid strong{font-family:var(--serif);font-weight:300;font-size:clamp(2.2rem,1.4rem + 2.4vw,3.6rem);line-height:1;letter-spacing:-.02em}
+.ngrid span{color:var(--muted);font-size:.92em;line-height:1.4}
+.ngrid strong span{color:inherit;font-size:inherit;line-height:inherit}
+@media (max-width:980px){.ngrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.ngrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.src{margin-top:18px;color:var(--muted);font-size:.8rem}
+/* imprensa */
+.press{border-top:1px solid var(--rule)}
+.press .seeworks{color:var(--ink);border-color:var(--ink)}
+.press .seeworks:hover{background:var(--ink);color:var(--paper)}
+.press #seepress{display:block;margin-top:clamp(32px,4vw,48px)}
+.pstats{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:24px 40px;margin-top:20px;padding-top:24px;border-top:1px solid var(--rule);align-items:start}
+.pstats > div{display:grid;gap:6px;min-width:0}
+.pstats strong{font-family:var(--serif);font-weight:300;font-size:clamp(2.2rem,1.4rem + 2.4vw,3.4rem);line-height:1}
+.pstats span{color:var(--muted);font-size:.9em;line-height:1.4}
+.bars{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:8px}
+.bars li{display:grid;grid-template-columns:5.5em minmax(0,1fr) 2em;align-items:center;gap:10px;font-size:.85rem}
+.bars i{display:block;height:6px;background:var(--ink);width:calc(var(--v) * 100%);min-width:3px}
+.bars b{font-weight:500;font-variant-numeric:tabular-nums}
+@media (max-width:760px){.pstats{grid-template-columns:1fr 1fr}.pstats .chart{grid-column:1/-1}}
+.pcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(20px,3vw,40px);margin-top:16px}
+.pcard{display:grid;gap:10px;align-content:start;padding:22px 0 28px;border-top:1px solid var(--rule);text-decoration:none;min-width:0}
+.pcard h3{font-family:var(--serif);font-weight:400;font-size:1.3rem;line-height:1.25}
+.pcard p{color:var(--muted);font-size:.93em;line-height:1.55}
+.pcard .go{font-size:.84rem;font-weight:500;border-bottom:1px solid var(--muted);width:max-content;padding-bottom:2px}
+.pcard:hover h3{text-decoration:underline;text-underline-offset:.15em;text-decoration-thickness:1px}
+@media (max-width:980px){.pcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.pcards{grid-template-columns:1fr}}
+.parchive{margin-top:clamp(32px,4vw,56px);display:grid;gap:clamp(40px,5vw,64px)}
+.mom{display:grid;gap:10px}
+.mom h3{font-family:var(--serif);font-weight:400;font-size:1.6rem}
+.mom .intro{color:var(--muted);max-width:62ch}
+.plist{list-style:none;margin:10px 0 0;padding:0}
+.plist li{display:grid;grid-template-columns:7.5em 13em minmax(0,1fr);gap:4px 20px;padding:12px 0;border-top:1px solid var(--rule);font-size:.93rem;align-items:baseline}
+.plist time{color:var(--muted);font-variant-numeric:tabular-nums}
+.plist .m{font-weight:500;display:grid}
+.plist .m small{font-weight:400;color:var(--muted);font-size:.78rem}
+.plist .t{font-family:var(--serif);font-size:1.08rem;line-height:1.35}
+@media (max-width:760px){.plist li{grid-template-columns:1fr;gap:2px}.plist .m{display:block}.plist .m small{margin-left:8px}}
 /* atelier */
 .pieces{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:clamp(36px,4vw,64px)}
 .pieces img{width:100%;aspect-ratio:2/3;object-fit:cover}
@@ -208,6 +262,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       <a href="#parque"><span class="pt">Parque</span><span class="en">Park</span></a>
       <a href="#artista"><span class="pt">Artista</span><span class="en">Artist</span></a>
       <a href="#atelier">Atelier</a>
+      <a href="#imprensa"><span class="pt">Imprensa</span><span class="en">Press</span></a>
       <a href="#passeios"><span class="pt">Passeios</span><span class="en">Walks</span></a>
       <a href="#pizza">Pizza Bar</a>
       <a href="#visitar"><span class="pt">Visitar</span><span class="en">Visit</span></a>
@@ -271,6 +326,27 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
 
       <ol class="works" id="works"></ol>
       <button type="button" class="seeworks" id="seeworks" aria-controls="works" aria-expanded="false"><span class="pt">Ver mais</span><span class="en">See more</span><span class="n15"> · 15</span><span class="sign" aria-hidden="true">↓</span></button>
+    </div>
+  </section>
+
+  <!-- DO MAR À ARTE — infografia -->
+  <section id="processo" class="process">
+    <div class="wrap">
+      <div class="head">
+        <p class="label"><span class="pt">Como nasce a Waste 2 Arte</span><span class="en">How Waste 2 Arte comes to be</span></p>
+        <h2><span class="pt">Do mar à arte</span><span class="en">From sea to art</span></h2>
+      </div>
+      <ol class="steps">
+        <li><span class="ic"><svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 48c5 0 5-4 10-4s5 4 10 4 5-4 10-4 5 4 10 4 5-4 10-4 5 4 10 4"/><path d="M4 58c5 0 5-4 10-4s5 4 10 4 5-4 10-4 5 4 10 4 5-4 10-4 5 4 10 4"/><g transform="rotate(-24 36 32)"><rect x="30" y="20" width="12" height="22" rx="4"/><path d="M33 20v-5h6v5"/><path d="M30 30h12"/></g><circle cx="56" cy="36" r="4.5"/><path d="M53 34.5l6 3"/></svg></span><span class="n">01</span><h3><span class="pt">O mar devolve</span><span class="en">The sea returns</span></h3><p class="pt">Bolas, boias, cordas, isqueiros, chinelos: o que se perde no oceano acaba por voltar à costa.</p><p class="en">Balls, buoys, ropes, lighters, flip-flops: what is lost at sea finds its way back to the shore.</p></li>
+        <li><span class="ic"><svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 60h64"/><path d="M8 60c6-8 14-10 22-10"/><path d="M22 26h28l-3 30H25z"/><path d="M28 26c0-6 4-10 8-10s8 4 8 10"/><circle cx="31" cy="40" r="3"/><path d="M38 36l6 6M44 36l-6 6"/><rect x="33" y="46" width="8" height="5" rx="1"/></svg></span><span class="n">02</span><h3><span class="pt">Recolha</span><span class="en">Collection</span></h3><p class="pt">Ações de plogging nas praias do concelho de Sines, ao longo de vários anos.</p><p class="en">Years of plogging on the beaches of the Sines municipality.</p></li>
+        <li><span class="ic"><svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="56" height="56"/><circle cx="20" cy="20" r="5"/><circle cx="36" cy="20" r="5"/><circle cx="52" cy="20" r="5"/><circle cx="20" cy="36" r="5"/><rect x="31" y="31" width="10" height="10" rx="2"/><circle cx="52" cy="36" r="5"/><path d="M15 52h10M31 52h10M47 52h10"/></svg></span><span class="n">03</span><h3><span class="pt">Composição</span><span class="en">Composition</span></h3><p class="pt">Os objetos são separados e organizados por forma, cor e história.</p><p class="en">Objects are sorted and arranged by shape, colour and story.</p></li>
+        <li><span class="ic"><svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="10" width="52" height="40"/><rect x="16" y="16" width="40" height="28"/><circle cx="26" cy="26" r="3"/><circle cx="36" cy="26" r="3"/><circle cx="46" cy="26" r="3"/><circle cx="31" cy="35" r="3"/><circle cx="41" cy="35" r="3"/><path d="M24 50l-6 14M48 50l6 14M36 50v14"/></svg></span><span class="n">04</span><h3><span class="pt">Arte</span><span class="en">Art</span></h3><p class="pt">Fotografia de autor e peças únicas do Atelier, expostas ao ar livre no Parque.</p><p class="en">Fine art photography and one-off Atelier pieces, shown outdoors in the Park.</p></li>
+      </ol>
+      <div class="nums">
+        <p class="label"><span class="pt">A exposição em números</span><span class="en">The exhibition in numbers</span></p>
+        <div class="ngrid"><div><strong>9 t</strong><span class="pt">de resíduos recolhidos nas praias</span><span class="en">tonnes of waste collected from beaches</span></div><div><strong>350</strong><span class="pt">peças de arte criadas</span><span class="en">artworks created</span></div><div><strong><span class="pt">+18 mil</span><span class="en">18,000+</span></strong><span class="pt">visitantes em 90 dias</span><span class="en">visitors in 90 days</span></div><div><strong><span class="pt">+4 mil</span><span class="en">4,000+</span></strong><span class="pt">crianças em oficinas de educação ambiental</span><span class="en">children in environmental education workshops</span></div><div><strong>18</strong><span class="pt">fotografias em exposição</span><span class="en">photographs on show</span></div></div>
+        <p class="src"><span class="pt">Balanço dos primeiros 90 dias da exposição, outubro de 2026.</span><span class="en">First 90 days of the exhibition, October 2026.</span></p>
+      </div>
     </div>
   </section>
 
@@ -416,6 +492,126 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
         <img src="img/detalhe-1.jpg" width="400" height="267" loading="lazy" alt="Pormenor de uma base de madeira de deriva com boia pintada e uma peça de Lego encontrada na praia">
         <img src="img/detalhe-2.jpg" width="400" height="267" loading="lazy" alt="Pormenor de uma boia vermelha sobre uma placa recuperada com a inscrição República Portuguesa">
         <img src="img/detalhe-3.jpg" width="400" height="267" loading="lazy" alt="Pormenor de uma boia com tinta gasta sobre madeira com o símbolo das Casas da Ilha">
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPRENSA -->
+  <section id="imprensa" class="press">
+    <div class="wrap">
+      <div class="split">
+        <div class="head" style="margin:0">
+          <p class="label"><span class="pt">Imprensa</span><span class="en">Press</span></p>
+          <h2><span class="pt">O Parque nas notícias</span><span class="en">The Park in the news</span></h2>
+        </div>
+        <div class="prose">
+          <p class="lede pt">Desde julho de 2026, o Parque Cultural e Regenerativo e a exposição Waste 2 Arte passaram por jornais, revistas, rádios e sites de todo o país.</p>
+          <p class="lede en">Since July 2026, the Cultural and Regenerative Park and the Waste 2 Arte exhibition have featured in newspapers, magazines, radio and websites across Portugal.</p>
+          <div class="pstats">
+            <div><strong>58</strong><span class="pt">peças na imprensa, rádio e online</span><span class="en">press, radio and online pieces</span></div>
+            <div><strong>40</strong><span class="pt">meios diferentes</span><span class="en">different outlets</span></div>
+            <div class="chart"><span class="label"><span class="pt">Peças por mês, 2026</span><span class="en">Pieces per month, 2026</span></span><ol class="bars"><li><span><span class="pt">Julho</span><span class="en">July</span></span><i style="--v:1.000" aria-hidden="true"></i><b>38</b></li><li><span><span class="pt">Agosto</span><span class="en">August</span></span><i style="--v:0.263" aria-hidden="true"></i><b>10</b></li><li><span><span class="pt">Setembro</span><span class="en">September</span></span><i style="--v:0.105" aria-hidden="true"></i><b>4</b></li><li><span><span class="pt">Outubro</span><span class="en">October</span></span><i style="--v:0.158" aria-hidden="true"></i><b>6</b></li></ol></div>
+          </div>
+        </div>
+      </div>
+      <p class="label" style="margin-top:clamp(40px,5vw,64px)"><span class="pt">Destaques</span><span class="en">Highlights</span></p>
+      <div class="pcards">
+        <a class="pcard" href="https://www.nit.pt/fora-de-casa/turismos-rurais-e-hoteis/o-novo-parque-cultural-do-alentejo-tem-alojamento-exposicoes-e-experiencias-pela-costa" target="_blank" rel="noopener"><span class="label">NiT · 7 de setembro de 2026</span><h3 lang="pt-PT">O novo parque cultural do Alentejo tem alojamento, exposições e experiências pela costa</h3><p class="pt">Reportagem alargada: suites e uma villa, a primeira exposição ao ar livre e um lugar que vai crescer nos próximos anos, a 10 minutos de Porto Covo.</p><span class="go">Ler a peça <span aria-hidden="true">↗</span></span></a>
+        <a class="pcard" href="https://observador.pt/2026/07/16/lixo-recolhido-nas-praias-da-costa-alentejana-transformado-em-obras-de-arte/" target="_blank" rel="noopener"><span class="label">Observador · 16 de julho de 2026</span><h3 lang="pt-PT">Lixo recolhido nas praias da costa alentejana transformado em obras de arte</h3><p class="pt">Peça da agência Lusa: o projeto quer despertar consciências para o que chega ao mar e fica em exposição em Porto Covo.</p><span class="go">Ler a peça <span aria-hidden="true">↗</span></span></a>
+        <a class="pcard" href="https://www.rtp.pt/play/p10010/e943629/mortinho-por-sair-de-casa" target="_blank" rel="noopener"><span class="label">Antena 1 · Mortinhos por Sair de Casa · 3 de agosto de 2026</span><h3 lang="pt-PT">Artes, resíduos e surpresas (episódio 120)</h3><p class="pt">A rubrica de lazer da Antena 1 sugere a exposição Waste 2 Arte como passeio de verão.</p><span class="go">Ouvir o episódio <span aria-hidden="true">↗</span></span></a>
+        <a class="pcard" href="https://marketeer.sapo.pt/novo-parque-cultural-em-porto-covo-aposta-na-ligacao-entre-arte-natureza-e-sustentabilidade/" target="_blank" rel="noopener"><span class="label">Marketeer · 3 de agosto de 2026</span><h3 lang="pt-PT">Novo parque cultural em Porto Covo aposta na ligação entre arte, natureza e sustentabilidade</h3><p class="pt">Está a nascer em Porto Covo um projeto que junta cultura, património natural e turismo sustentável.</p><span class="go">Ler a peça <span aria-hidden="true">↗</span></span></a>
+        <a class="pcard" href="https://greensavers.sapo.pt/arte-e-natureza-em-simbiose-na-regeneracao-do-territorio/" target="_blank" rel="noopener"><span class="label">Green Savers · 6 de agosto de 2026</span><h3 lang="pt-PT">Arte e natureza em simbiose na regeneração do território</h3><p class="pt">Património natural, cultura e educação ambiental, com a arte como motor para regenerar o território.</p><span class="go">Ler a peça <span aria-hidden="true">↗</span></span></a>
+        <a class="pcard" href="https://sapo.pt/artigo/casas-da-ilha-porto-covo-o-refugio-perfeito-entre-a-ruralidade-alentejana-e-o-atlantico-6aad336b40a8eac321c6e48f" target="_blank" rel="noopener"><span class="label">SAPO · The Travellight World · 24 de setembro de 2026</span><h3 lang="pt-PT">Casas da Ilha Porto Covo: o refúgio perfeito entre a ruralidade alentejana e o Atlântico</h3><p class="pt">Uma antiga herdade transformada em refúgio, entre turismo sustentável, agricultura regenerativa e arte.</p><span class="go">Ler a peça <span aria-hidden="true">↗</span></span></a>
+      </div>
+      <button type="button" class="seeworks" id="seepress" aria-controls="parchive" aria-expanded="false"><span class="pt">Ver todas as peças</span><span class="en">See all coverage</span><span class="n15"> · 58</span><span class="sign" aria-hidden="true">↓</span></button>
+      <div class="parchive" id="parchive" hidden>
+        <section class="mom">
+          <p class="label">Julho de 2026 · 35 peças</p>
+          <h3>A Waste 2 Arte abre com o Festival Músicas do Mundo</h3>
+          <p class="pt intro">A exposição de Nuno Antunes abriu o parque ao público, integrada nas iniciativas paralelas do FMM Sines. A agência Lusa levou a notícia a jornais e rádios de todo o país.</p>
+          <ol class="plist">
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">SAPO<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/lixo-recolhido-nas-praias-alentejanas-transformado-em-exposicao-de-arte-em-porto-covo-6a57887a51114f8fcd17b5e5" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias alentejanas transformado em exposição de arte em Porto Covo</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">SAPO<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/o-lixo-que-o-mar-devolve-transforma-se-em-arte-na-costa-alentejana-6a574e431d56c7322a48eac3" target="_blank" rel="noopener" lang="pt-PT">O lixo que o mar devolve transforma-se em arte na Costa Alentejana</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">Rádio Sines<small>Online</small></span><span class="t"><a href="https://radiosines.sapo.pt/noticias/lixo-recolhido-nas-praias-alentejanas-transformado-em-exposicao-de-arte-em-porto-covo" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias alentejanas transformado em exposição de arte em Porto Covo</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">The Portugal Resident<small>Online</small></span><span class="t"><a href="https://www.portugalresident.com/pt/res%C3%ADduos-2-arte-porto-covo/" target="_blank" rel="noopener" lang="pt-PT">Lixo de praia do Alentejo transformado em arte</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">The Portugal Resident<small>Online</small></span><span class="t"><a href="https://www.portugalresident.com/waste-2-arte-porto-covo/" target="_blank" rel="noopener" lang="en">Alentejo beach litter transformed into art</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">DiáriOnline Região Sul<small>Online</small></span><span class="t"><a href="https://regiao-sul.pt/cultura-e-eventos/lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa/775074" target="_blank" rel="noopener" lang="pt-PT">Lixo das praias da Costa Alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">Rádio M24<small>Online</small></span><span class="t"><a href="https://www.radiom24.com/noticias/exposicao-transforma-lixo-recolhido-nas-praias-da-costa-alentejana-em-obras-de-arte" target="_blank" rel="noopener" lang="pt-PT">Exposição transforma lixo recolhido nas praias da costa alentejana em obras de arte</a></span></li>
+            <li><time datetime="2026-07-15">15 de julho</time><span class="m">aNotícia<small>Online</small></span><span class="t"><a href="https://anoticia.pt/2026/07/15/lixo-nas-praias-costa-alentejana-obras-arte/" target="_blank" rel="noopener" lang="pt-PT">Lixo nas praias da Costa Alentejana ganha nova vida em obras de arte</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">Observador<small>Online</small></span><span class="t"><a href="https://observador.pt/2026/07/16/lixo-recolhido-nas-praias-da-costa-alentejana-transformado-em-obras-de-arte/" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias da costa alentejana transformado em obras de arte</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">The Portugal News<small>Online</small></span><span class="t"><a href="https://www.theportugalnews.com/pt/noticias/2026-07-16/lixo-recolhido-nas-praias-portuguesas-ao-longo-da-costa-do-alentejo-transformado-em-obras-de-arte/1056225" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias portuguesas ao longo da costa do Alentejo transformado em obras de arte</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">The Portugal News<small>Online</small></span><span class="t"><a href="https://www.theportugalnews.com/news/2026-07-16/trash-collected-on-portuguese-beaches-along-the-alentejo-coast-transformed-into-works-of-art/1056200" target="_blank" rel="noopener" lang="en">Trash collected on Portuguese beaches along the Alentejo coast transformed into works of art</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">Rádio Campanário<small>Online</small></span><span class="t"><a href="https://www.radiocampanario.com/lixo-recolhido-nas-praias-da-costa-alentejana-transformado-em-obras-de-arte/" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias da costa alentejana transformado em obras de arte</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">O Setubalense<small>Online</small></span><span class="t"><a href="https://osetubalense.com/local/sines/lixo-recolhido-nas-praias-da-costa-alentejana-transformado-em-obras-de-arte/" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias da costa alentejana transformado em obras de arte</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">Alentejo Ilustrado<small>Online</small></span><span class="t"><a href="https://alentejoilustrado.pt/nuno-antunes-expoe-fotografias-feitas-com-lixo-recolhido-nas-praias-alentejanas/" target="_blank" rel="noopener" lang="pt-PT">Nuno Antunes expõe fotografias feitas com lixo recolhido nas praias alentejanas</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">A Voz do Algarve<small>Online</small></span><span class="t"><a href="https://www.avozdoalgarve.pt/d/exposicao-waste-2-arte-lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa/95984" target="_blank" rel="noopener" lang="pt-PT">Exposição Waste 2 Arte: lixo das praias da costa alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-16">16 de julho</time><span class="m">Sustainable Living<small>Online</small></span><span class="t"><a href="https://www.sustainableliving.pt/news/beach-litter-turned-into-art-exhibition-in-porto-covo" target="_blank" rel="noopener" lang="en">Beach litter turned into art exhibition in Porto Covo</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Green Savers<small>Online</small></span><span class="t"><a href="https://greensavers.sapo.pt/lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa/" target="_blank" rel="noopener" lang="pt-PT">Lixo das praias da Costa Alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Rádio Campanário<small>Online</small></span><span class="t"><a href="https://www.radiocampanario.com/musicas-do-mundo-regressam-a-porto-covo-e-sines-com-concertos-e-outras-atividades/" target="_blank" rel="noopener" lang="pt-PT">Músicas do Mundo regressam a Porto Covo e Sines com concertos e outras atividades</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Sul Informação<small>Online</small></span><span class="t"><a href="https://alentejo.sulinformacao.pt/en/2026/07/musicas-do-mundo-regressam-a-porto-covo-e-sines-com-concertos-e-outras-atividades/" target="_blank" rel="noopener" lang="en">World Music returns to Porto Covo and Sines with concerts and other activities</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Notícias ao Minuto<small>Online</small></span><span class="t"><a href="https://www.noticiasaominuto.com/cultura/3022877/musicas-do-mundo-regressam-a-porto-covo-e-sines-com-concertos-e-nao-so" target="_blank" rel="noopener" lang="pt-PT">Músicas do Mundo regressam a Porto Covo e Sines com concertos e não só</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Sábado<small>Online</small></span><span class="t"><a href="https://www.sabado.pt/gps/detalhe/festival-musicas-do-mundo-em-porto-covo-e-sines-comeca-hoje-e-apresenta-se-como-um-ato-de-resistencia" target="_blank" rel="noopener" lang="pt-PT">Festival Músicas do Mundo em Porto Covo e Sines começa hoje e apresenta-se como um ato de resistência</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Alentejo Ilustrado<small>Online</small></span><span class="t"><a href="https://alentejoilustrado.pt/festival-musicas-do-mundo-comeca-hoje-continuamos-a-ser-um-ato-de-resistencia/" target="_blank" rel="noopener" lang="pt-PT">Festival Músicas do Mundo começa hoje: «Continuamos a ser um ato de resistência»</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">O Atual<small>Online</small></span><span class="t"><a href="http://www.oatual.pt/noticias/festival-musicas-do-mundo-regressa-a-porto-covo-e-sines" target="_blank" rel="noopener" lang="pt-PT">Festival Músicas do Mundo regressa a Porto Covo e Sines</a></span></li>
+            <li><time datetime="2026-07-17">17 de julho</time><span class="m">Viral Agenda<small>Agenda cultural</small></span><span class="t"><a href="https://www.viralagenda.com/pt/events/1819701/waste-2-arte-nuno-antunes-visita-a-exposicao" target="_blank" rel="noopener" lang="pt-PT">Waste 2 Arte – Nuno Antunes | Visita à exposição</a></span></li>
+            <li><time datetime="2026-07-18">18 de julho</time><span class="m">Município de Sines<small>Agenda cultural</small></span><span class="t"><a href="https://www.sines.pt/pages/401?event_id=1725" target="_blank" rel="noopener" lang="pt-PT">«Waste 2 Arte» – Nuno Antunes | Visita à exposição</a></span></li>
+            <li><time datetime="2026-07-18">18 de julho</time><span class="m">TV Record Europa<small>Online</small></span><span class="t"><a href="https://recordeuropa.com/noticias/portugal/lixo-recolhido-nas-praias-da-costa-alentejana-transformado-em-obras-de-arte-18-07-2026-347146" target="_blank" rel="noopener" lang="pt-PT">Lixo recolhido nas praias da costa alentejana transformado em obras de arte</a></span></li>
+            <li><time datetime="2026-07-20">20 de julho</time><span class="m">A Defesa<small>Online</small></span><span class="t"><a href="https://adefesa.org/2026/07/20/exposicao-waste-2-arte-lixo-das-praias-da-costa-alentejana-e-materia-prima-para-a-arte-regenerativa/" target="_blank" rel="noopener" lang="pt-PT">Exposição Waste 2 Arte: lixo das praias da costa alentejana é matéria-prima para a arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-20">20 de julho</time><span class="m">O Setubalense<small>Imprensa escrita</small></span><span class="t"><span lang="pt-PT">Exposição Waste 2 Arte em Porto Covo</span></span></li>
+            <li><time datetime="2026-07-21">21 de julho</time><span class="m">Creative News<small>Online</small></span><span class="t"><a href="https://creativenews.pt/2026/07/21/lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa/" target="_blank" rel="noopener" lang="pt-PT">Lixo das praias da Costa Alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-22">22 de julho</time><span class="m">As Artes entre as Letras<small>Online</small></span><span class="t"><a href="https://artesentreasletras.com.pt/waste-2-arte/" target="_blank" rel="noopener" lang="pt-PT">Waste 2 Arte</a></span></li>
+            <li><time datetime="2026-07-22">22 de julho</time><span class="m">Welectric<small>Online</small></span><span class="t"><a href="https://welectric.pt/2026/07/22/lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa/" target="_blank" rel="noopener" lang="pt-PT">Lixo das praias da Costa Alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-22">22 de julho</time><span class="m">SAPO<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa-6a60eee3503f077bd1ec1fa9" target="_blank" rel="noopener" lang="pt-PT">Lixo das praias da Costa Alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-24">24 de julho</time><span class="m">Jornal Sudoeste<small>Imprensa escrita</small></span><span class="t"><span lang="pt-PT">Waste 2 Arte no Parque Cultural e Regenerativo Casas da Ilha</span></span></li>
+            <li><time datetime="2026-07-28">28 de julho</time><span class="m">Passear.com<small>Online</small></span><span class="t"><a href="https://www.passear.com/2026/07/lixo-das-praias-da-costa-alentejana-e-materia-prima-para-arte-regenerativa/" target="_blank" rel="noopener" lang="pt-PT">Lixo das praias da Costa Alentejana é matéria-prima para arte regenerativa</a></span></li>
+            <li><time datetime="2026-07-29">29 de julho</time><span class="m">As Artes entre as Letras<small>Imprensa escrita</small></span><span class="t"><span lang="pt-PT">Waste 2 Arte</span></span></li>
+          </ol>
+        </section>
+        <section class="mom">
+          <p class="label">Julho e agosto de 2026 · 13 peças</p>
+          <h3>Nasce o Parque Cultural e Regenerativo</h3>
+          <p class="pt intro">A imprensa de cultura, sustentabilidade e turismo descobre um lugar onde a arte, a vinha, os lagos e a comunidade crescem juntos.</p>
+          <ol class="plist">
+            <li><time datetime="2026-07-30">30 de julho</time><span class="m">Echo Boomer<small>Online</small></span><span class="t"><a href="https://echoboomer.pt/casas-da-ilha-abre-em-fonte-de-mouro/" target="_blank" rel="noopener" lang="pt-PT">Casas da Ilha abre em Fonte de Mouro com projeto cultural no litoral alentejano</a></span></li>
+            <li><time datetime="2026-07-30">30 de julho</time><span class="m">ineews<small>Online</small></span><span class="t"><a href="https://ineews.eu/new/2026/07/30/primeiro-parque-cultural-do-litoral-alentejano-abre-portas/" target="_blank" rel="noopener" lang="pt-PT">Primeiro parque cultural do litoral alentejano abre portas</a></span></li>
+            <li><time datetime="2026-07-31">31 de julho</time><span class="m">E-Cultura<small>Online</small></span><span class="t"><a href="https://www.e-cultura.pt/artigo/36355" target="_blank" rel="noopener" lang="pt-PT">Primeiro parque cultural do litoral alentejano abre portas</a></span></li>
+            <li><time datetime="2026-08-03">3 de agosto</time><span class="m">Antena 1 · Mortinhos por Sair de Casa<small>Rádio</small></span><span class="t"><a href="https://www.rtp.pt/play/p10010/e943629/mortinho-por-sair-de-casa" target="_blank" rel="noopener" lang="pt-PT">Artes, resíduos e surpresas (episódio 120)</a></span></li>
+            <li><time datetime="2026-08-03">3 de agosto</time><span class="m">Marketeer<small>Online</small></span><span class="t"><a href="https://marketeer.sapo.pt/novo-parque-cultural-em-porto-covo-aposta-na-ligacao-entre-arte-natureza-e-sustentabilidade/" target="_blank" rel="noopener" lang="pt-PT">Novo parque cultural em Porto Covo aposta na ligação entre arte, natureza e sustentabilidade</a></span></li>
+            <li><time datetime="2026-08-03">3 de agosto</time><span class="m">Refúgios &amp; Petiscos<small>Online</small></span><span class="t"><a href="https://www.refugiosepetiscos.pt/index.php/espacosmobile/4415-casas-da-ilha-cria-parque-cultural-e-regenerativo-em-porto-covo.html" target="_blank" rel="noopener" lang="pt-PT">Casas da Ilha cria parque cultural e regenerativo em Porto Covo</a></span></li>
+            <li><time datetime="2026-08-03">3 de agosto</time><span class="m">Must<small>Online</small></span><span class="t"><a href="https://www.itmustbegood.net/post/5-novidades-para-descobrir" target="_blank" rel="noopener" lang="pt-PT">5 novidades para descobrir</a></span></li>
+            <li><time datetime="2026-08-06">6 de agosto</time><span class="m">Green Savers<small>Online</small></span><span class="t"><a href="https://greensavers.sapo.pt/arte-e-natureza-em-simbiose-na-regeneracao-do-territorio/" target="_blank" rel="noopener" lang="pt-PT">Arte e natureza em simbiose na regeneração do território</a></span></li>
+            <li><time datetime="2026-08-06">6 de agosto</time><span class="m">Creative News<small>Online</small></span><span class="t"><a href="https://creativenews.pt/2026/08/06/novo-espaco-convida-a-descobrir-a-costa-vicentina-alem-das-praias/" target="_blank" rel="noopener" lang="pt-PT">Novo espaço convida a descobrir a Costa Vicentina além das praias</a></span></li>
+            <li><time datetime="2026-08-06">6 de agosto</time><span class="m">Sustainable Living<small>Online</small></span><span class="t"><a href="https://www.sustainableliving.pt/news/new-cultural-park-in-porto-covo-links-art-to-land-regenerati" target="_blank" rel="noopener" lang="en">New cultural park in Porto Covo links art to land regeneration</a></span></li>
+            <li><time datetime="2026-08-13">13 de agosto</time><span class="m">Forever Young<small>Online</small></span><span class="t"><a href="https://foreveryoung.sapo.pt/novo-parque-cultural-em-porto-covo-convida-a-descobrir-a-costa-vicentina-para-la-das-praias/" target="_blank" rel="noopener" lang="pt-PT">Novo parque cultural em Porto Covo convida a descobrir a Costa Vicentina para lá das praias</a></span></li>
+            <li><time datetime="2026-08-24">24 de agosto</time><span class="m">Presstur<small>Online</small></span><span class="t"><a href="https://presstur.com/casas-da-ilha-em-porto-covo-combinam-arte-preservacao-e-cultura/" target="_blank" rel="noopener" lang="pt-PT">Casas da Ilha, em Porto Covo, combinam arte, preservação e cultura</a></span></li>
+            <li><time datetime="2026-08-31">31 de agosto</time><span class="m">Turisver<small>Online</small></span><span class="t"><a href="https://turisver.pt/casas-da-ilha-convida-a-descobrir-a-costa-vicentina-alem-das-praias/" target="_blank" rel="noopener" lang="pt-PT">«Casas da Ilha» convida a descobrir a Costa Vicentina além das praias</a></span></li>
+          </ol>
+        </section>
+        <section class="mom">
+          <p class="label">Setembro de 2026 · 4 peças</p>
+          <h3>Ficar nas Casas da Ilha</h3>
+          <p class="pt intro">Com o verão a terminar, as reportagens chegam às casas: uma antiga herdade recuperada a 800 metros do mar.</p>
+          <ol class="plist">
+            <li><time datetime="2026-09-07">7 de setembro</time><span class="m">NiT<small>Online</small></span><span class="t"><a href="https://www.nit.pt/fora-de-casa/turismos-rurais-e-hoteis/o-novo-parque-cultural-do-alentejo-tem-alojamento-exposicoes-e-experiencias-pela-costa" target="_blank" rel="noopener" lang="pt-PT">O novo parque cultural do Alentejo tem alojamento, exposições e experiências pela costa</a></span></li>
+            <li><time datetime="2026-09-07">7 de setembro</time><span class="m">Alentrium<small>Online</small></span><span class="t"><a href="https://alentrium.pt/casas-da-ilha-abre-projeto-turistico-de-30-hectares-junto-a-ilha-do-pessegueiro/" target="_blank" rel="noopener" lang="pt-PT">Casas da Ilha abre projeto turístico de 30 hectares junto à Ilha do Pessegueiro</a></span></li>
+            <li><time datetime="2026-09-21">21 de setembro</time><span class="m">SAPO · The Travellight World<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/no-lugar-de-porto-covo-6aad2eaa2a756779ea543020" target="_blank" rel="noopener" lang="pt-PT">No lugar de Porto Covo</a></span></li>
+            <li><time datetime="2026-09-24">24 de setembro</time><span class="m">SAPO · The Travellight World<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/casas-da-ilha-porto-covo-o-refugio-perfeito-entre-a-ruralidade-alentejana-e-o-atlantico-6aad336b40a8eac321c6e48f" target="_blank" rel="noopener" lang="pt-PT">Casas da Ilha Porto Covo: o refúgio perfeito entre a ruralidade alentejana e o Atlântico</a></span></li>
+          </ol>
+        </section>
+        <section class="mom">
+          <p class="label">Outubro de 2026 · 6 peças</p>
+          <h3>O balanço da Waste 2 Arte</h3>
+          <p class="pt intro">Noventa dias depois, os números da exposição: nove toneladas de resíduos, 350 peças de arte e milhares de visitantes.</p>
+          <ol class="plist">
+            <li><time datetime="2026-10-08">8 de outubro</time><span class="m">The Portugal Resident<small>Online</small></span><span class="t"><a href="https://www.portugalresident.com/pt/Nove-toneladas-de-lixo-de-praia-transformadas-em-arte./" target="_blank" rel="noopener" lang="pt-PT">Nove toneladas de lixo de praia transformadas em arte</a></span></li>
+            <li><time datetime="2026-10-08">8 de outubro</time><span class="m">The Portugal Resident<small>Online</small></span><span class="t"><a href="https://www.portugalresident.com/nine-tonnes-of-beach-waste-transformed-into-art/" target="_blank" rel="noopener" lang="en">Nine tonnes of beach waste transformed into art</a></span></li>
+            <li><time datetime="2026-10-09">9 de outubro</time><span class="m">O Digital<small>Online</small></span><span class="t"><a href="https://odigital.sapo.pt/porto-covo-nove-toneladas-de-residuos-recolhidos-nas-praias-transformados-em-350-pecas-de-arte/" target="_blank" rel="noopener" lang="pt-PT">Porto Covo: Nove toneladas de resíduos recolhidos nas praias transformados em 350 peças de arte</a></span></li>
+            <li><time datetime="2026-10-09">9 de outubro</time><span class="m">SAPO<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/porto-covo-nove-toneladas-de-residuos-recolhidos-nas-praias-transformados-em-350-pecas-de-arte-6ac88252e430155de0bc1c6d" target="_blank" rel="noopener" lang="pt-PT">Porto Covo: Nove toneladas de resíduos recolhidos nas praias transformados em 350 peças de arte</a></span></li>
+            <li><time datetime="2026-10-15">15 de outubro</time><span class="m">The Portugal Resident<small>Imprensa escrita</small></span><span class="t"><a href="https://www.pressreader.com/portugal/the-resident/20261015/281797110965600" target="_blank" rel="noopener" lang="en">Nine tonnes of beach waste transformed into art</a></span></li>
+            <li><time datetime="2026-10-21">21 de outubro</time><span class="m">Green Savers<small>Online</small></span><span class="t"><a href="https://sapo.pt/artigo/waste-2-arte-transforma-nove-toneladas-de-residuos-em-arte-6ad8721fc85bc266794ad3b8" target="_blank" rel="noopener" lang="pt-PT">Waste 2 Arte transforma nove toneladas de resíduos em arte</a></span></li>
+          </ol>
+        </section>
+        <p class="src"><span class="pt">Títulos como foram publicados. As edições impressas não têm link público.</span><span class="en">Headlines as published (mostly in Portuguese). Print editions have no public link.</span></p>
       </div>
     </div>
   </section>
@@ -625,6 +821,11 @@ document.querySelectorAll('[data-more="intro"]').forEach(b=>b.addEventListener('
   document.querySelectorAll('[data-more="intro"]').forEach(x=>setMore(x,open))}));
 document.getElementById('works').addEventListener('click',e=>{const b=e.target.closest('.more');if(!b)return;
   const li=b.closest('li');setMore(b,li.classList.toggle('open'))});
+// imprensa: arquivo completo
+(function(){const b=document.getElementById('seepress'),a=document.getElementById('parchive');
+  b.addEventListener('click',()=>{const open=a.hidden;a.hidden=!open;b.setAttribute('aria-expanded',open);
+    b.querySelector('.pt').textContent=open?'Fechar o arquivo':'Ver todas as peças';b.querySelector('.en').textContent=open?'Close the archive':'See all coverage';
+    b.querySelector('.n15').hidden=open;b.querySelector('.sign').textContent=open?'↑':'↓';});})();
 // exposição: 3 obras e "ver mais"
 (function(){
   const list=document.getElementById('works'),btn=document.getElementById('seeworks');
