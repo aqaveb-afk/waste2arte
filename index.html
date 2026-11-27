@@ -133,10 +133,16 @@ hr.r{border:0;border-top:1px solid var(--rule);margin:0}
 .cap .alt{grid-column:2;color:var(--night-muted);font-style:italic;font-size:.82em}
 @media (max-width:760px){.works{grid-template-columns:1fr}}
 
+.dl-night{display:block;margin-top:14px;font-size:.84rem;color:var(--night-muted);text-decoration:underline;text-underline-offset:.22em;width:max-content}
+.dl-night:hover{color:var(--night-ink)}
+.opening .dl{color:var(--ink);text-decoration:underline;text-underline-offset:.3em}
 /* atelier */
 .pieces{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:clamp(36px,4vw,64px)}
 .pieces img{width:100%;aspect-ratio:2/3;object-fit:cover}
 @media (max-width:760px){.pieces{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.details img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.thanks .moulds{width:min(260px,60%);margin-top:clamp(16px,3vw,40px)}
 
 /* agradecimentos */
 .thanks .prose b{font-weight:500}
@@ -217,6 +223,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
     <div class="meta">
       <span class="label"><span class="pt">Em exposição — Waste 2 Arte, fotografia de Nuno Antunes</span><span class="en">On view — Waste 2 Arte, photography by Nuno Antunes</span></span>
       <span class="label"><span class="pt">Exposição ao ar livre</span><span class="en">Open-air exhibition</span></span>
+      <a class="label dl" href="brochura/waste-2-arte-brochura.pdf" download><span class="pt">Descarregar a brochura</span><span class="en">Download the brochure (PT)</span> · PDF 6,6 MB ↓</a>
     </div>
   </div>
 
@@ -281,6 +288,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
       <div class="cols">
         <div class="prose pt">
           <p class="lede">Integrada na programação paralela do Festival Músicas do Mundo e com o apoio da Câmara Municipal de Sines, a Waste 2 Arte inaugura o primeiro projeto do Parque Cultural e Regenerativo das Casas da Ilha.</p>
+          <p>O espaço nasce com a missão de promover, de forma acessível, criativa e inspiradora, os valores ambientais, culturais e paisagísticos do Parque Natural do Sudoeste Alentejano e Costa Vicentina, sensibilizando visitantes e comunidade para a preservação do território através da arte, da educação ambiental e da sustentabilidade.</p>
           <p>Uma exposição que propõe uma reflexão sobre a relação entre o Homem e o Oceano, entre o Homem e o Planeta, e mostra como a criatividade pode valorizar materiais recolhidos no ambiente e estimular comportamentos mais responsáveis.</p>
         </div>
         <div class="prose pt">
@@ -288,9 +296,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p>Cada fotografia convida a olhar duas vezes: primeiro vemos um objeto abandonado; depois descobrimos uma memória, um fragmento da nossa relação com o oceano e com o planeta. Aquilo que descartamos nunca desaparece, apenas muda de lugar.</p>
           <p class="motto">Porque o mar transforma.<br>A arte revela.<br>E nós escolhemos o futuro.</p>
           <button type="button" class="seeworks" aria-controls="works" aria-expanded="false"><span class="t">Ver a exposição</span><span class="sign" aria-hidden="true">+</span></button>
+          <a class="dl-night" href="brochura/waste-2-arte-brochura.pdf" download>Descarregar a brochura · PDF ↓</a>
         </div>
         <div class="prose en">
           <p class="lede">Part of the parallel programme of the Músicas do Mundo Festival and supported by Sines City Council, Waste 2 Arte opens the first project of the Casas da Ilha Cultural and Regenerative Park.</p>
+          <p>The space was created to promote, in an accessible, creative and inspiring way, the environmental, cultural and landscape values of the Southwest Alentejo and Vicentine Coast Natural Park, raising awareness among visitors and the local community of the importance of preserving the territory through art, environmental education and sustainability.</p>
           <p>The exhibition invites reflection on the relationship between humanity and the ocean, and between humanity and the planet, showing how creativity can add value to materials collected from the environment and encourage more responsible behaviour.</p>
         </div>
         <div class="prose en">
@@ -298,6 +308,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p>Each photograph asks us to look twice: first we see an abandoned object; then we find a memory, a fragment of our relationship with the ocean and the planet. What we discard never disappears; it only changes place.</p>
           <p class="motto">For the sea transforms.<br>Art reveals.<br>And we choose the future.</p>
           <button type="button" class="seeworks" aria-controls="works" aria-expanded="false"><span class="t">See the exhibition</span><span class="sign" aria-hidden="true">+</span></button>
+          <a class="dl-night" href="brochura/waste-2-arte-brochura.pdf" download>Download the brochure (PT) · PDF ↓</a>
         </div>
       </div>
 
@@ -317,12 +328,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
         <div class="prose pt">
           <p class="lede">Fotógrafo, recoletor e observador atento da paisagem costeira. Há vários anos percorre as praias da costa alentejana em ações de plogging, recolhendo objetos que o mar devolve à terra.</p>
           <p>Na sua obra, esses vestígios deixam de ser resíduos para se tornarem elementos de uma nova narrativa visual. Através da fotografia de autor e da composição, revela a beleza inesperada do que foi descartado e convida a questionar os conceitos de desperdício, valor e responsabilidade ambiental.</p>
-          <p>As imagens de Waste 2 Arte não documentam apenas uma realidade; reinterpretam-na.</p>
+          <p>As imagens de Waste 2 Arte não documentam apenas uma realidade; reinterpretam-na. Cada fotografia é um exercício de contemplação e reflexão, onde a estética se alia à sustentabilidade.</p>
+          <p>O seu trabalho mostra que aquilo que o mar devolve pode voltar a inspirar, emocionando o olhar e despertando uma nova consciência sobre o território que partilhamos.</p>
         </div>
         <div class="prose en">
           <p class="lede">Photographer, beachcomber and close observer of the coastal landscape. For years he has walked the beaches of the Alentejo coast plogging, collecting the objects the sea returns to land.</p>
           <p>In his work these traces stop being waste and become part of a new visual narrative. Through fine art photography and composition he reveals the unexpected beauty of what was thrown away, and asks us to question ideas of waste, value and environmental responsibility.</p>
-          <p>The images in Waste 2 Arte do not simply document a reality; they reinterpret it.</p>
+          <p>The images in Waste 2 Arte do not simply document a reality; they reinterpret it. Each photograph is an exercise in contemplation and reflection, where aesthetics meet sustainability.</p>
+          <p>His work shows that what the sea returns can inspire again, moving the eye and awakening a new awareness of the territory we share.</p>
         </div>
         <p style="margin-top:28px"><a class="btn" href="https://www.nunoantunes.art" target="_blank" rel="noopener">nunoantunes.art ↗</a></p>
       </div>
@@ -343,11 +356,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p class="lede">A matéria-prima do Waste 2 Arte nasce nas praias e exige paciência, suor e uma enorme vontade de a recolher.</p>
           <p>Cada pedaço de madeira, cada boia, corda, rede ou objeto moldado pelo mar foi recolhido em ações de limpeza da costa alentejana. São materiais que perderam a sua função original, mas não a sua história.</p>
           <p>Antes de se transformarem em arte, foram resíduos. Hoje são testemunhos da força do oceano e da responsabilidade que todos temos na preservação deste património natural.</p>
+          <p>Cada peça recorda-nos que, por vezes, basta um novo olhar para descobrir beleza onde antes apenas víamos desperdício.</p>
         </div>
         <div class="prose en">
           <p class="lede">The raw material of Waste 2 Arte comes from the beaches, and collecting it takes patience, sweat and a great deal of will.</p>
           <p>Every piece of wood, every buoy, rope, net or object shaped by the sea was gathered during clean-ups of the Alentejo coast. These materials have lost their original purpose, but not their story.</p>
           <p>Before becoming art, they were waste. Today they bear witness to the force of the ocean and to our shared responsibility for this natural heritage.</p>
+          <p>Each piece reminds us that sometimes a new way of looking is all it takes to find beauty where we once saw only waste.</p>
         </div>
       </div>
       <figure class="portrait" style="margin:0"><img src="img/materia.jpg" width="600" height="800" loading="lazy" alt="Resíduos de plástico espalhados entre seixos ao pé de uma arriba"></figure>
@@ -369,11 +384,13 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
             <p class="lede">Há objetos que o mar devolve sem que ninguém lhes volte a tocar. Outros encontram um novo destino.</p>
             <p>Cada madeira desgastada pelo sal, cada boia, cada corda ou fragmento recolhido na costa volta a fazer parte de uma história. Não são transformados para esconder o passado, mas para o revelar: as marcas do tempo e do oceano ficam visíveis, porque são elas que lhes dão identidade.</p>
             <p>Cada peça é única e irrepetível. Ao entrar numa casa, num jardim, num hotel ou num espaço público, leva consigo um fragmento da Costa Alentejana.</p>
+            <p>O Atelier é, por isso, mais do que um lugar onde se criam objetos: é um espaço onde se recuperam histórias e onde a arte prolonga a vida dos materiais, convidando quem acolhe cada peça a fazer parte desta viagem de respeito, consciência e esperança.</p>
           </div>
           <div class="prose en">
             <p class="lede">Some objects the sea returns are never touched again. Others find a new life.</p>
             <p>Every piece of salt-worn wood, every buoy, rope or fragment gathered on the coast becomes part of a story again. They are not reworked to hide their past but to reveal it: the marks of time and ocean stay visible, because they give each piece its identity.</p>
             <p>Each piece is unique and unrepeatable. In a home, a garden, a hotel or a public space, it carries a fragment of the Alentejo coast with it.</p>
+            <p>The Atelier is therefore more than a place where objects are made: it is where stories are recovered and art extends the life of materials, inviting whoever welcomes a piece to join this journey of respect, awareness and hope.</p>
           </div>
         </div>
       </div>
@@ -384,6 +401,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
         <img src="img/peca-4.jpg" width="427" height="640" loading="lazy" alt="Candeeiro de boia em amarelo, verde e vermelho">
         <img src="img/peca-5.jpg" width="482" height="640" loading="lazy" alt="Candeeiro de boias esféricas sobre madeira">
         <img src="img/peca-6.jpg" width="738" height="735" loading="lazy" alt="Cozinha com candeeiros suspensos num tronco de deriva e bancada de madeira recuperada">
+      </div>
+      <div class="details">
+        <img src="img/detalhe-1.jpg" width="400" height="267" loading="lazy" alt="Pormenor de uma base de madeira de deriva com boia pintada e uma peça de Lego encontrada na praia">
+        <img src="img/detalhe-2.jpg" width="400" height="267" loading="lazy" alt="Pormenor de uma boia vermelha sobre uma placa recuperada com a inscrição República Portuguesa">
+        <img src="img/detalhe-3.jpg" width="400" height="267" loading="lazy" alt="Pormenor de uma boia com tinta gasta sobre madeira com o símbolo das Casas da Ilha">
       </div>
     </div>
   </section>
@@ -396,13 +418,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
         <div class="head">
           <p class="label"><span class="pt">Agradecimentos</span><span class="en">Acknowledgements</span></p>
           <h2><span class="pt">Um projeto de muitas mãos</span><span class="en">Many hands</span></h2>
+          <img class="moulds" src="img/formas-areia.webp" width="640" height="631" loading="lazy" alt="Quatro formas de brincar na areia, em estrela e peixe, recolhidas na praia">
         </div>
         <div class="prose pt">
           <p>O Waste 2 Arte é um projeto construído por muitas mãos, movido pela convicção de que a arte pode inspirar uma relação mais consciente com a natureza.</p>
           <p>À <b>Câmara Municipal de Sines</b> e ao seu Executivo, liderado pelo Presidente <b>Álvaro Beijinha</b>, pelo apoio e pela visão na valorização da cultura, do território e da sustentabilidade.</p>
           <p>Ao <b>Instituto da Conservação da Natureza e das Florestas (ICNF)</b>, cuja equipa desenvolve um trabalho exemplar na preservação do Parque Natural do Sudoeste Alentejano e Costa Vicentina. Um agradecimento especial ao Engenheiro <b>Paulo Faleiro Silva</b> e a toda a equipa, pela disponibilidade, profissionalismo e forma pedagógica com que ajudam a fazer acontecer iniciativas privadas que contribuem para a utilização sustentável do território do Parque.</p>
           <p>À <b>Junta de Freguesia de Porto Covo</b>, na pessoa do seu Presidente, <b>José Pedro Arsénio</b>, e ao plogger portocovense <b>Eurico Nunes</b>, cuja dedicação à limpeza das nossas praias continua a inspirar esta missão.</p>
-          <p>À equipa de produção e a todos os parceiros e colaboradores. E ao fotógrafo e amigo <b>Nuno Antunes</b>, que, através do seu olhar, transforma resíduos em arte.</p>
+          <p>À equipa de produção e a todos os parceiros e colaboradores. E ao fotógrafo e amigo <b>Nuno Antunes</b>, que, através do seu olhar, transforma resíduos em arte e nos convida a viajar, em consciência, por um admirável mundo novo.</p>
+          <p>A todos, o nosso mais profundo obrigado.</p>
           <p class="sig">Casas da Ilha</p>
         </div>
         <div class="prose en">
@@ -410,7 +434,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <p>To <b>Sines City Council</b> and its Executive, led by Mayor <b>Álvaro Beijinha</b>, for their support and their vision for culture, territory and sustainability.</p>
           <p>To the <b>Institute for Nature Conservation and Forests (ICNF)</b>, whose team does exemplary work preserving the Southwest Alentejo and Vicentine Coast Natural Park. Special thanks to <b>Paulo Faleiro Silva</b> and the whole team for their availability, professionalism and the guidance they give to private initiatives that support the sustainable use of the Park.</p>
           <p>To the <b>Porto Covo Parish Council</b> and its President, <b>José Pedro Arsénio</b>, and to Porto Covo plogger <b>Eurico Nunes</b>, whose dedication to cleaning our beaches keeps inspiring this mission.</p>
-          <p>To the production team and all our partners and collaborators. And to photographer and friend <b>Nuno Antunes</b>, who turns waste into art through the way he sees.</p>
+          <p>To the production team and all our partners and collaborators. And to photographer and friend <b>Nuno Antunes</b>, who turns waste into art through the way he sees, and invites us on a conscious journey through a brave new world.</p>
+          <p>To all of you, our deepest thanks.</p>
           <p class="sig">Casas da Ilha</p>
         </div>
       </div>
@@ -472,6 +497,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-bet
           <span class="label">Email</span>
           <span class="v" id="mail">amazingportocovo@gmail.com</span>
           <button class="copy" type="button" id="copy-mail"><span class="pt">Copiar email</span><span class="en">Copy email</span></button>
+        </div>
+        <div>
+          <span class="label">Instagram</span>
+          <span class="v">@casasdailha.portocovo</span>
+          <a class="btn" href="https://www.instagram.com/casasdailha.portocovo/" target="_blank" rel="noopener"><span class="pt">Seguir ↗</span><span class="en">Follow ↗</span></a>
+        </div>
+        <div>
+          <span class="label"><span class="pt">Brochura</span><span class="en">Brochure</span></span>
+          <span class="v"><span class="pt">Waste 2 Arte · 30 páginas</span><span class="en">Waste 2 Arte · 30 pages (Portuguese)</span></span>
+          <a class="btn" href="brochura/waste-2-arte-brochura.pdf" download><span class="pt">Descarregar PDF ↓</span><span class="en">Download PDF ↓</span></a>
         </div>
       </div>
     </div>
